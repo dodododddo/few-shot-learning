@@ -1,0 +1,11 @@
+dataset: mini-imagenet
+dataset_args: {split: test}
+
+ep_per_batch: 1
+n_batch: 200
+n_query: 15
+model: meta-baseline
+model_args: 
+    encoder: vit-small
+    encoder_args: {}
+load_encoder: ./checkpoints/mini/pretrained.pth
